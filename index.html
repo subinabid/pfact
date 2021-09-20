@@ -26,6 +26,9 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
+  
+  <!-- jquery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js" integrity="sha512-n/4gHW3atM3QqRcbCn6ewmpxcLAHGaDjpEBu4xZd47N0W2oQ+6q7oc3PXstrJYXcbNU1OHdQ1T7pAP+gi5Yu8g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
   <!-- =======================================================
   * Template Name: Reveal - v4.4.0
@@ -64,57 +67,13 @@
         </div>
         
         <nav id="navbar" class="navbar">
-            <ul>
-                <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-                <li><a class="nav-link scrollto" href="#about">About</a></li>
-                <li class="dropdown"><a href="#services"><span>Services</span> <i class="bi bi-chevron-down"></i></a>
-              <ul>
-                  <li class="dropdown"><a href="#"><span>Data Science</span> <i class="bi bi-chevron-right"></i></a>
-                      <ul>
-                          <li><a href="#">Deep Drop Down 1</a></li>
-                          <li><a href="#">Deep Drop Down 2</a></li>
-                          <li><a href="#">Deep Drop Down 3</a></li>
-                          <li><a href="#">Deep Drop Down 4</a></li>
-                          <li><a href="#">Deep Drop Down 5</a></li>
-                      </ul>
-                  </li>
-                  <li class="dropdown"><a href="#"><span>Data Visualization</span> <i class="bi bi-chevron-right"></i></a>
-                      <ul>
-                          <li><a href="#">Deep Drop Down 1</a></li>
-                          <li><a href="#">Deep Drop Down 2</a></li>
-                          <li><a href="#">Deep Drop Down 3</a></li>
-                          <li><a href="#">Deep Drop Down 4</a></li>
-                          <li><a href="#">Deep Drop Down 5</a></li>
-                      </ul>
-                  </li>
-                  <li class="dropdown"><a href="#"><span>Data Engneering</span> <i class="bi bi-chevron-right"></i></a>
-                      <ul>
-                          <li><a href="#">Deep Drop Down 1</a></li>
-                          <li><a href="#">Deep Drop Down 2</a></li>
-                          <li><a href="#">Deep Drop Down 3</a></li>
-                          <li><a href="#">Deep Drop Down 4</a></li>
-                          <li><a href="#">Deep Drop Down 5</a></li>
-                      </ul>
-                  </li>
-              </ul>
-          </li>
-          <li class="dropdown"><a href="#"><span>Industries</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
-                <li><a href="#">Retail</a></li>
-                <li><a href="#">Healthcare</a></li>
-                <li><a href="#">Manufacturing</a></li>
-                <li><a href="#">Telecommunication</a></li>
-            </ul>
-        </li>
-          <li><a class="nav-link scrollto " href="#portfolio">Portfolio</a></li>
-          <li><a class="nav-link scrollto" href="#team">Team</a></li>
-        <li><a class="nav-link scrollto" href="blog.pfactorial.com">Blog</a></li>
-        <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
-    </ul>
-    <i class="bi bi-list mobile-nav-toggle"></i>
-</nav><!-- .navbar -->
-
-</div>
+            <script>
+                $(function(){
+                    $("#navbar").load("nav.html")
+                });
+            </script>
+        </nav><!-- .navbar -->
+    </div>
 </header><!-- End Header -->
 
 <!-- ======= hero Section ======= -->
@@ -151,8 +110,8 @@
           </div>
 
           <div class="col-lg-6 content">
-            <h2>Lorem ipsum dolor sit amet, consectetur adipiscing</h2>
-            <h3>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h3>
+            <h2>Experts in Data Science</h2>
+            <h3>We have more than 100+ projects in different technologies such as Data Science, Data Analytics, Machine Learning,Articicial Intelligence, Natural Language Processing, Data Visulaization and Business Intelligence. Our Employees are well experienced and Experts on their techanical domains.</h3>
 
             <ul>
               <li><i class="bi bi-check-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
@@ -463,8 +422,8 @@
             <div class="member">
               <div class="pic"><img src="assets/img/team-1.jpg" alt=""></div>
               <div class="details">
-                <h4>Walter White</h4>
-                <span>Chief Executive Officer</span>
+                <h4>Arun</h4>
+                <span>Chief Executive Officer, Founder</span>
                 <div class="social">
                   <a href=""><i class="bi bi-twitter"></i></a>
                   <a href=""><i class="bi bi-facebook"></i></a>
@@ -477,10 +436,10 @@
 
           <div class="col-lg-3 col-md-6">
             <div class="member">
-              <div class="pic"><img src="assets/img/team-2.jpg" alt=""></div>
+              <div class="pic"><img src="assets/img/sneha.webp" alt=""></div>
               <div class="details">
-                <h4>Sarah Jhinson</h4>
-                <span>Product Manager</span>
+                <h4>Sneha</h4>
+                <span>CTO, Co-Founder</span>
                 <div class="social">
                   <a href=""><i class="bi bi-twitter"></i></a>
                   <a href=""><i class="bi bi-facebook"></i></a>
@@ -496,7 +455,7 @@
               <div class="pic"><img src="assets/img/team-3.jpg" alt=""></div>
               <div class="details">
                 <h4>William Anderson</h4>
-                <span>CTO</span>
+                <span>CXO</span>
                 <div class="social">
                   <a href=""><i class="bi bi-twitter"></i></a>
                   <a href=""><i class="bi bi-facebook"></i></a>
@@ -512,7 +471,7 @@
               <div class="pic"><img src="assets/img/team-4.jpg" alt=""></div>
               <div class="details">
                 <h4>Amanda Jepson</h4>
-                <span>Accountant</span>
+                <span>CFO</span>
                 <div class="social">
                   <a href=""><i class="bi bi-twitter"></i></a>
                   <a href=""><i class="bi bi-facebook"></i></a>
