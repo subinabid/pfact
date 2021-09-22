@@ -380,8 +380,9 @@ section {
   overflow: hidden;
 }
 
-/* Sections Header
---------------------------------*/
+/*-------------------------------------------------------------- 
+Section Header
+--------------------------------------------------------------*/
 .section-header { margin-bottom: 30px; }
 .section-header h2 {
   font-size: 32px;
@@ -404,45 +405,6 @@ section {
 .section-header p {
   padding: 0;
   margin: 0;
-}
-
-/*--------------------------------------------------------------
-# Breadcrumbs
---------------------------------------------------------------*/
-.breadcrumbs {
-  padding: 20px 0;
-  background-color: #fafafa;
-  min-height: 40px;
-}
-.breadcrumbs h2 {
-  font-size: 24px;
-  font-weight: 300;
-  margin: 0;
-}
-@media (max-width: 992px) {
-  .breadcrumbs h2 { margin: 0 0 10px 0; }
-}
-.breadcrumbs ol {
-  display: flex;
-  flex-wrap: wrap;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  font-size: 14px;
-}
-.breadcrumbs ol li + li {
-  padding-left: 10px;
-}
-.breadcrumbs ol li + li::before {
-  display: inline-block;
-  padding-right: 10px;
-  color: #6c757d;
-  content: "/";
-}
-@media (max-width: 768px) {
-  .breadcrumbs .d-flex  { display: block !important;}
-  .breadcrumbs ol       { display: block;}
-  .breadcrumbs ol li    { display: inline-block;}
 }
 
 /* About Section
@@ -571,7 +533,7 @@ section {
   background-color: var(--pf-sec);
 }
 
-/* Our Portfolio Section
+/* Portfolio Section
 --------------------------------*/
 #portfolio {
   background: #fff;
@@ -974,3 +936,90 @@ section {
   color: var(--pf-txt2);
 }
 #footer .credits a {color: var(--pf-pri); }
+
+/*--------------------------------------------------------------
+# Inner Page 
+--------------------------------------------------------------*/
+.inner-page{
+    min-height: calc(100vh - 80px - 42px - 28px - 80px - 39px);
+}
+
+/*--------------------------------------------------------------
+# Inner Page Breadcrumbs
+--------------------------------------------------------------*/
+.breadcrumbs {
+    padding: 20px 0;
+    background-color: #fafafa;
+    min-height: 40px;
+  }
+  .breadcrumbs h2 {
+    font-size: 24px;
+    font-weight: 300;
+    margin: 0;
+  }
+  @media (max-width: 992px) {
+    .breadcrumbs h2 { margin: 0 0 10px 0; }
+  }
+  .breadcrumbs ol {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+  }
+  .breadcrumbs ol li + li {
+    padding-left: 10px;
+  }
+  .breadcrumbs ol li + li::before {
+    display: inline-block;
+    padding-right: 10px;
+    color: #6c757d;
+    content: "/";
+  }
+  @media (max-width: 768px) {
+    .breadcrumbs .d-flex  { display: block !important;}
+    .breadcrumbs ol       { display: block;}
+    .breadcrumbs ol li    { display: inline-block;}
+  }
+  
+/*--------------------------------------------------------------
+# Inner Page Buttons
+--------------------------------------------------------------*/
+.btn-page {
+    font-family: "Raleway", sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 10px 32px;
+    border-radius: 2px;
+    transition: 0.5s;
+    margin: 10px;
+    color: #fff;
+  }
+
+  .btn-pri {
+    background: var(--pf-pri);
+    border: 2px solid var(--pf-pri);
+  }
+  .btn-pri:hover {
+    background: none;
+    color: var(--pf-pri);
+  }
+  .btn-sec {
+    background: var(--pf-sec);
+    border: 2px solid var(--pf-sec);
+  }
+  .btn-sec:hover {
+    background: none;
+    color: var(--pf-sec);
+  }
+  .btn-bottom {
+      position:absolute;
+      bottom: 0;
+  }
+
+  .page-box-content{
+      padding-bottom: 40px;
+  }
